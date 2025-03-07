@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Detail</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .modal-open {
+            transform: translateX(0);
+        }
+        .modal-closed {
+            transform: translateX(-100%);
+        }
+        .transition-custom {
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-[#F2EAE1]">
+
+    <button id="openModal" class="ml-[289px] mt-[20px]">
+        <img src="./assets/Vector (2).png" alt="menu">
+    </button>
+
+    <div id="modal" class="fixed inset-0 hidden flex justify-start">
+        <div id="menuContent" class="bg-[#F2EAE1] p-6 shadow-lg w-[270px] h-full transition-custom modal-closed">
+            <h2>Admin Students</h2>
+            <img class="userImg" src="./Sample_User_Icon.png" alt="User">
+            <p id="usernameDisplay" class="mb-4 text-gray-700 font-medium"></p>
+            <p class="Admin">Admin</p>
+            <button id="closeModal" class="close">Close</button>
+
+            <div class="buttonStudent">
+                <button class="studentBtn">
+                    <img src="./assets/student.png" alt="Students"> Students
+                </button>
+            </div>
+
+            <div class="logoutDiv">
+                <button onclick="logout()">Log out <img src="./assets/log out.png" alt="logout"></button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="detailLine p-6">
+        <div class="flex justify-between items-center">
+            <h1 id="studentName" class="text-xl font-bold"></h1>
+            <button id="editStudent" class="text-yellow-500">
+                <img src="./assets/edit.png" alt="edit" class="w-5">
+            </button>
+        </div>
+
+        <div class="flex items-center space-x-4 mt-4">
+            <img id="studentImage" src="./Sample_User_Icon.png" alt="Student Image" class="w-24 h-24 rounded-md">
+            <div>
+                <p class="text-gray-700"><span class="font-semibold">Email:</span> <span id="studentEmail"></span></p>
+                <p class="text-gray-700"><span class="font-semibold">Phone:</span> <span id="studentPhone"></span></p>
+                <p class="text-gray-700"><span class="font-semibold">Name:</span> <span id="studentEnroll"></span></p>
+                <p class="text-gray-700"><span class="font-semibold">Date Admission:</span> <span id="studentDate"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./detail.js"></script>
+</body>
+</html>

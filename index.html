@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-[#FEAF00] to-[#F8D442]">
+    <div class="sign-up">
+       <div class="sign_details  w-[475px] h-[550px]  mx-auto mt-[200px]">
+        <div class="signup_text">
+            <h2>Admin Students</h2>
+        </div>
+        <div class="signup_text2">
+            <h1 >SIGN UP</h1>
+            <p>Enter your credentials to access your account</p>
+           </div>
+
+           <form class="sign-up-form" action="login">
+            <p>Enter new login</p>
+            <input class="input1" type="text" id="username" placeholder="Enter your login" required>
+            <br>
+            <p>Create new password</p>
+            <input class="input2" id="password" type="password" placeholder="Enter your password" required>
+            <button onclick="signUp()" class="w-[415px] h-[44px] bg-[#FEAF00]" type="submit">SIGN UP</button>
+           </form>
+       </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

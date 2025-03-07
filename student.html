@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Modal Menu</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .modal-open {
+            transform: translateX(0);
+        }
+        .modal-closed {
+            transform: translateX(-100%);
+        }
+        .transition-custom {
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class=" bg-[#F2EAE1] ">
+
+    
+    <button id="openModal" class="ml-[289px] mt-[20px]"><img src="./assets/Vector (2).png" alt=""></button>
+    
+    <div id="modal" class="fixed inset-0  hidden flex justify-start">
+        <div id="menuContent" class="bg-[#F2EAE1] p-6  shadow-lg w-[270px] h-[900] transition-custom modal-closed">
+            <h2 class="Menu">Admin students</h2>
+            <img class="userImg" src="./Sample_User_Icon.png" alt="">
+            <p id="usernameDisplay" class="mb-4 text-gray-700 font-medium"></p>
+            <p class="Admin">Admin</p>
+            <div>
+                <button id="closeModal" class="close">Close</button>
+            </div>
+            <div class="buttonStudent">
+            <button onclick="StudentBtn()" class="studentBtn"><img src="./assets/student.png" alt=""> Students</button>
+        </div>
+
+        <div class="logoutDiv">
+            <button onclick="logout()" >Log out <img src="./assets/log out.png" alt=""></h2>
+        </div>
+        </div>
+        
+    </div>
+    <br>
+    <br>
+    <div class="StudentList">
+        <div class="container">
+            <div class="StudentText">
+                <h1>Students List</h1>
+                <div class="searchBtn">
+                    <input type="text" class="searchInput" placeholder="Search...">
+                    <img src="./assets/search 1.png" alt="">
+                </div>
+                <div class="StudentAddbtn">
+                    <button onclick="addStudent()" class="addStudentBtn">Add New Student</button>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="DetailList">
+                <div class="lists">
+                    <li>Name</li>
+                    <li>Email</li>
+                    <li>Phone</li>
+                    <li>Enroll Number</li>
+                    <li>Date admission</li>
+                </div>
+  
+                <table>
+                    <thead>
+                        <tr >
+
+                        </tr>
+                    </thead>
+                    <tbody class="studentListBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="studentModal hidden">
+        <div class="modalContent">
+            <h2 class="modalTitle">Student About</h2>
+            <input type="name" class="studentInput studentName" placeholder="Full Name">
+            <input type="email" class="studentInput studentEmail" placeholder="Email">
+            <input type="number" class="studentInput studentPhone" placeholder="Phone Number">
+            <input type="number" class="studentInput studentEnroll" placeholder="Enroll Number">
+            <input type="date" class="studentInput studentDate">
+            <div class="modalButtons">
+                <button onclick="closeModal()" class="cancelBtn">Cancel</button>
+                <button class="saveBtn">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
+

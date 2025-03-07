@@ -1,0 +1,348 @@
+
+
+.sign_details{
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px 0px ;
+}
+.signup_text h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    border-left: 5px solid #F8D442;
+    font-size: 32px;
+    
+    
+}
+.signup_text{
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    width: 285.5px;
+    height: 79px;
+    padding-top: 30px;
+}
+.signup_text2 h1{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+    font-weight: 600;
+    font-size: 22px;
+}
+.signup_text2 p{
+    font-size: 14px;
+    text-align: center;
+    color: #6C6C6C;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+.signup_text2{
+    margin-top: 30px;
+}
+.sign-up-form p{
+   color: #6C6C6C;
+   font-size: 14px;
+   font-weight: 400;
+   font-family: "Montserrat", sans-serif;
+}
+.sign-up-form input{
+  width: 415px;
+  height: 44px;
+  border-radius: 4px;
+  border: 1px solid #E5E5E5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+.sign-up-form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    height: 305px;
+    width: 415px;
+}
+.sign-up-form button{
+    margin-top: 40px;
+    color: #fff;
+}
+.close{
+  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+  transition: .1s;
+  margin-left: 250px;
+  position: absolute;
+  margin-top: -100px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+
+}
+.close:hover{
+    background-color: red;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+.Menu{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    border-left: 5px solid #F8D442;
+    font-size: 22px;
+}
+#usernameDisplay {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.userImg{
+    width: 130px;
+    display: flex;
+    margin: 0 auto;
+    border: 5px solid #F8D442;
+    border-radius: 50%;
+    transition: .5s;
+}
+.userImg:hover{
+    border: 5px solid #FEAF00;
+    transform: scale(1.04);
+}
+.Admin{
+    color: #FEAF00;
+    font-size: 14px;
+    text-align: center;
+    margin-top: -20px;
+}
+.buttonStudent{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.studentBtn{
+    width: 193px;
+    height: 41px;
+    background: #FEAF00;
+    border-radius: 4px;
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    align-items: center;
+    text-align: center;
+    transition: .1s;
+    cursor: pointer;
+    justify-content: center;
+}
+.studentBtn:hover{
+    background-color: #F2EAE1;
+}
+.studentBtn img {
+    margin-left: -10px;
+    margin-right: 10px;
+}
+.logoutDiv{
+    margin-top: 500px;
+}
+.logoutDiv button{
+    width: 150px;
+}
+.logoutDiv button img{
+    margin-left: 120px;
+    margin-top: -16px;
+}
+.container{
+    width: 1270px;
+    margin: 0 auto;
+    overflow: auto;
+    overflow: hidden;
+    height: 880px;
+    background-color: #fafafa;
+    margin-left: 270px;
+}
+.StudentText h1{
+    font-size: 22px;
+    color: #000;
+    margin-left: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.StudentText{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.StudentAddbtn button{
+    margin-right: 30px;
+    margin-top: 20px;
+    border-radius: 4px;
+    color: #fff;
+    width: 190px;
+    height: 44px;
+    background-color: #FEAF00;
+}
+table {
+    width: 1310px;
+    height: 85px;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #fff;
+}
+th, td {
+    padding: 10px;
+    font-size: 14px;
+   color: #000000;
+}
+th {
+    background-color: #fafafa;
+}
+ li{
+    list-style: none;
+    display: flex;
+}
+.lists{
+    display: flex;
+    text-align: center;
+    gap: 115px;
+    justify-content: center;
+    color: #ACACAC;
+    font-size: 12px;
+}
+.studentModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    height: 450px;
+}
+.modalTitle{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    border-left: 5px solid #F8D442;
+    font-size: 22px;
+}
+.studentName{
+    background-color: #F2EAE1;
+    padding-left: 9px;
+    height: 50px;
+    width: 200px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.studentEmail{
+    background-color: #F2EAE1;
+    padding-left: 9px;
+    height: 50px;
+    width: 200px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.studentPhone{
+    background-color: #F2EAE1;
+    padding-left: 9px;
+    height: 50px;
+    width: 200px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.studentEnroll{
+    background-color: #F2EAE1;
+    padding-left: 9px;
+    height: 50px;
+    width: 200px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.studentDate{
+    background-color: #F2EAE1;
+    padding-left: 9px;
+    height: 50px;
+    width: 200px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+.cancelBtn{
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #fc2525;
+}
+.saveBtn{
+    width: 120px;
+    border-radius: 5px;
+    background-color: #F8D442;
+    height: 40px;
+    color: #fff;
+}
+.studentImg{
+    width: 65px;
+    cursor: pointer;
+    margin-left: 45px;
+    height: 55px;
+    margin-top: 15px;
+}
+.studentImg:hover{
+    transform: scale(1.04);
+    background-color: #E5E5E5;
+    border-radius: 10px;
+    
+}
+.editBtn{
+    font-size: 19px;
+}
+.deleteBtn{
+    font-size: 19px
+}
+tr{
+    width: 210px;
+}
+.searchInput{
+    width: 212px;
+    height: 37px;
+    padding-left: 5px;
+    border-radius: 8px;
+    color: #C4C4C4;
+    font-size: 14px;
+    border: none;
+    margin-top: 20px;
+    background-color: #fff;
+}
+.searchBtn{
+    width: 212px;
+    margin-left: 900px;
+    position: relative;
+}
+.searchBtn img{
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 180px;
+}
+.detailLine{
+    width: 1270px;
+    margin: 0 auto;
+    overflow: auto;
+    overflow: hidden;
+    height: 880px;
+    background-color: #fafafa;
+    margin-left: 270px;
+}
